@@ -33,8 +33,8 @@
             --gold: #B8860B;
             --gold-light: #D4A84B;
             --gold-dark: #8B6914;
-            --navy: #1A1A2E;
-            --navy-light: #2D2D44;
+            --navy: #181b60;
+            --navy-light: #252878;
             --cream: #FAF7F2;
             --cream-dark: #F0EBE3;
             --text: #1A1A2E;
@@ -52,7 +52,7 @@
         /* === NAV === */
         .nav {
             position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-            background: rgba(26,26,46,0.95); backdrop-filter: blur(20px);
+            background: rgba(24,27,96,0.95); backdrop-filter: blur(20px);
             padding: 0 5%; height: 68px;
             display: flex; justify-content: space-between; align-items: center;
             border-bottom: 1px solid rgba(184,134,11,0.15);
@@ -78,7 +78,7 @@
         .hero {
             min-height: 100vh; display: flex; align-items: center;
             padding: 100px 5% 60px;
-            background: linear-gradient(135deg, rgba(26,26,46,0.82) 0%, rgba(26,26,46,0.65) 50%, rgba(26,26,46,0.55) 100%), url('assets/hero-augustins.jpg') center/cover no-repeat;
+            background: linear-gradient(135deg, rgba(24,27,96,0.82) 0%, rgba(24,27,96,0.65) 50%, rgba(24,27,96,0.55) 100%), url('assets/hero-augustins.jpg') center/cover no-repeat;
             position: relative; overflow: hidden;
         }
         .hero::after {
@@ -178,7 +178,7 @@
         .artisan-img img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
         .artisan-badge {
             position: absolute; bottom: 20px; left: 20px;
-            background: rgba(26,26,46,0.9); backdrop-filter: blur(12px);
+            background: rgba(24,27,96,0.9); backdrop-filter: blur(12px);
             border: 1px solid rgba(184,134,11,0.3); border-radius: 12px;
             padding: 14px 20px; display: flex; align-items: center; gap: 10px;
             font-family: var(--font-heading); font-size: 0.85rem; color: #FFF; font-weight: 600;
@@ -202,7 +202,7 @@
         .cta-box .btn { position: relative; z-index: 2; }
 
         /* === FOOTER === */
-        footer { background: #0F0F1A; color: #FFF; padding: 60px 5% 28px; }
+        footer { background: #0e1045; color: #FFF; padding: 60px 5% 28px; }
         .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 40px; max-width: 1200px; margin-left: auto; margin-right: auto; }
         footer h4 { font-family: var(--font-heading); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; color: var(--gold-light); }
         footer p, footer a { color: #6B6B80; font-size: 0.88rem; }
@@ -227,7 +227,7 @@
             .footer-grid { grid-template-columns: 1fr; }
             .nav-links {
                 position: fixed; top: 0; right: 0; height: 100vh; width: 100%;
-                background: rgba(26,26,46,0.97); backdrop-filter: blur(20px);
+                background: rgba(24,27,96,0.97); backdrop-filter: blur(20px);
                 flex-direction: column; justify-content: center; align-items: center;
                 transform: translateX(100%); transition: transform 0.4s var(--ease); gap: 24px;
             }
@@ -247,7 +247,7 @@
 
     <!-- NAV -->
     <nav class="nav">
-        <div class="nav-brand">Stylobat<span>.</span></div>
+        <a href="#" class="nav-brand"><img src="assets/logo-stylobat.png" alt="Styl'O Bat" style="height: 38px; width: auto; filter: brightness(0) invert(1);"></a>
         <div class="burger" id="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div>
         <div class="nav-links" id="navLinks">
             <a href="#services">Savoir-faire</a>
@@ -263,7 +263,7 @@
             <div>
                 <div class="hero-tag"><span class="dot"></span> Peinture décorative — Toulouse</div>
                 <h1>L'art de sublimer<br>vos espaces avec<br><em>élégance.</em></h1>
-                <p class="hero-desc">Depuis plus de 25 ans, Fabrice Sendra perpétue l'art de la peinture décorative : frises XIXe siècle, trompe-l'œil, décors patrimoniaux. Du Musée des Augustins aux intérieurs de particuliers.</p>
+                <p class="hero-desc">Peintre en bâtiment et décorateur depuis plus de 25 ans, Fabrice Sendra allie travaux de peinture classique et art décoratif d'exception : frises XIXe, trompe-l'œil, décors patrimoniaux. Du Musée des Augustins aux intérieurs de particuliers.</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-gold btn-lg">
                         Demander un devis
@@ -281,10 +281,9 @@
 
     <!-- TRUST BAR -->
     <div class="trust-bar">
-        <div class="trust-item"><div class="trust-num">25+</div><div class="trust-lbl">ans d'expérience</div></div>
-        <div class="trust-item"><div class="trust-num">XIXe</div><div class="trust-lbl">Frises & décors</div></div>
-        <div class="trust-item"><div class="trust-num">Augustins</div><div class="trust-lbl">Musée mythique</div></div>
-        <div class="trust-item"><div class="trust-num">Pro & Particulier</div><div class="trust-lbl">Tous projets</div></div>
+        <div class="trust-item"><div class="trust-num">+25 ans</div><div class="trust-lbl">d'expérience</div></div>
+        <div class="trust-item"><div class="trust-num">5/5</div><div class="trust-lbl">sur Google</div></div>
+        <div class="trust-item"><div class="trust-num">Pro & Part.</div><div class="trust-lbl">Tous projets</div></div>
     </div>
 
     <!-- SERVICES -->
@@ -344,24 +343,52 @@
                 </div>
             </div>
             <div class="real-item reveal">
-                <img src="assets/hero-augustins.jpg" alt="Frises décoratives XIXe siècle" loading="lazy" style="object-position: right center;">
+                <img src="assets/plafond-frises.jpg" alt="Plafond faux marbre et frises XIXe siècle" loading="lazy">
                 <div class="real-overlay">
-                    <h3>Frises XIXe siècle</h3>
-                    <p>Ornements peints à la main</p>
+                    <h3>Plafond & Frises XIXe</h3>
+                    <p>Faux marbre, arabesques et feuillages</p>
                 </div>
             </div>
             <div class="real-item reveal">
-                <img src="assets/hero-augustins.jpg" alt="Décor hôtel particulier" loading="lazy" style="object-position: left top;">
+                <img src="assets/trompe-oeil-theatre.jpg" alt="Trompe-l'œil rideau de théâtre" loading="lazy">
                 <div class="real-overlay">
-                    <h3>Hôtel particulier</h3>
-                    <p>Décor intérieur — Toulouse</p>
+                    <h3>Trompe-l'œil théâtre</h3>
+                    <p>Rideau de scène en trompe-l'œil</p>
                 </div>
             </div>
             <div class="real-item reveal">
-                <img src="assets/hero-augustins.jpg" alt="Trompe-l'œil mural" loading="lazy" style="object-position: center bottom;">
+                <img src="assets/frise-blanche.jpg" alt="Frise florale en trompe-l'œil blanc" loading="lazy">
                 <div class="real-overlay">
-                    <h3>Trompe-l'œil</h3>
-                    <p>Peinture murale décorative</p>
+                    <h3>Frise florale</h3>
+                    <p>Trompe-l'œil blanc — effet bas-relief</p>
+                </div>
+            </div>
+            <div class="real-item reveal">
+                <img src="assets/trompe-oeil-union.jpg" alt="Trompe-l'œil façade Ville de L'Union" loading="lazy">
+                <div class="real-overlay">
+                    <h3>Ville de L'Union</h3>
+                    <p>Décor de façade — trompe-l'œil</p>
+                </div>
+            </div>
+            <div class="real-item featured reveal">
+                <img src="assets/fresque-nature.jpg" alt="Fresque murale nature — pâquerettes" loading="lazy">
+                <div class="real-overlay">
+                    <h3>Fresque murale nature</h3>
+                    <p>Peinture décorative — intérieur particulier</p>
+                </div>
+            </div>
+            <div class="real-item reveal">
+                <img src="assets/fresque-chantier.jpg" alt="Fresque ornementale en cours de réalisation" loading="lazy">
+                <div class="real-overlay">
+                    <h3>Fresque en chantier</h3>
+                    <p>Ornements végétaux — travaux en cours</p>
+                </div>
+            </div>
+            <div class="real-item reveal">
+                <img src="assets/decor-facade.jpg" alt="Décor soleil en façade" loading="lazy">
+                <div class="real-overlay">
+                    <h3>Décor de façade</h3>
+                    <p>Ornement soleil et vagues en relief</p>
                 </div>
             </div>
         </div>
@@ -371,13 +398,13 @@
     <section id="artisan">
         <div class="artisan-grid">
             <div class="artisan-img reveal">
-                <img src="assets/hero-augustins.jpg" alt="Fabrice Sendra — Stylobat Peinture" style="object-position: center;">
+                <img src="assets/plafond-frises.jpg" alt="Fabrice Sendra — Stylobat Peinture — Décor plafond" style="object-position: center;">
                 <div class="artisan-badge">🎨 <span>25+ ans</span> de métier</div>
             </div>
             <div class="reveal">
                 <div class="section-tag">L'artisan</div>
                 <h2 style="font-family: var(--font-heading); font-weight: 700; font-size: clamp(2rem,4vw,2.5rem); margin-bottom: 20px;">Fabrice Sendra,<br>l'art au bout <em style="color: var(--gold);">du pinceau.</em></h2>
-                <p style="color: var(--text-muted); margin-bottom: 16px;">Fondateur de Stylobat Peinture, Fabrice est un artisan peintre décorateur qui conjugue savoir-faire traditionnel et exigence contemporaine.</p>
+                <p style="color: var(--text-muted); margin-bottom: 16px;">Fondateur de Styl'O Bat, Fabrice est peintre en bâtiment et décorateur qui conjugue savoir-faire traditionnel et exigence contemporaine. Du ravalement aux finitions intérieures, il maîtrise tous les travaux de peinture.</p>
                 <p style="color: var(--text-muted); margin-bottom: 16px;">Spécialiste des frises décoratives XIXe siècle et du trompe-l'œil, il a notamment réalisé les décors de la <strong>salle mythique du Musée des Augustins</strong> à Toulouse — un lieu d'exception qui témoigne de son talent.</p>
                 <p style="color: var(--text-muted); margin-bottom: 28px;">Des intérieurs d'hôtels particuliers aux chantiers professionnels, Fabrice intervient avec la même passion : celle de sublimer chaque espace.</p>
                 <a href="#contact" class="btn btn-gold">
@@ -407,7 +434,7 @@
     <footer>
         <div class="footer-grid">
             <div>
-                <div class="footer-brand">Stylobat<span>.</span></div>
+                <div class="footer-brand"><img src="assets/logo-stylobat.png" alt="Styl'O Bat" style="height: 32px; width: auto; filter: brightness(0) invert(1); margin-bottom: 4px;"></div>
                 <p style="margin-top: 8px;">Peinture décorative & patrimoine.<br>Toulouse — Occitanie.</p>
             </div>
             <div>
